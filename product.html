@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment 1: Interstate Train Ticket Purchase" />
+	<meta name="keywords" content="train ticket, interstate" />
+	<meta name="author" content="Yufeng Lin(101795019)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trains Go Interstate | Index</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=neon%7C3d-float" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CUbuntu%7CAcme%7CGloria+Hallelujah" rel="stylesheet">
+    <script src="./scripts/part2.js"></script>
+    <script src="./scripts/enhancements.js"></script>
+</head>
+<body>
+    <header>
+        <section id="branding" class="container">
+            <p class="item">
+                <img src="images/logo.png" alt="logo" id="logo">
+            </p>
+            <h1 class="item">
+                <span class="font-effect-3d-float">Trains Go Interstate</span>
+            </h1>
+        </section>
+        <nav class="navigator">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p class="font-effect-neon"><a href="product.html">Product</a></p>
+                <p><a href="enquire.html">Enquire</a></p>
+                <p><a href="enhancements.html">Enhancements</a></p>
+                <p><a href="enhancements2.html">Enhancements 2</a></p>
+        </nav>
+    </header>
+    <p id="gotop"><a href="#top">Top</a></p>
+    <section id="main">
+        <h2 class="page-title">Interstate Train Lines</h2>
+        <div class="container" id="main-content">
+            <div class="main-col">
+                <article>
+                    <h2>Melbourne to/from Adelaide (via Bendigo and Nhill/Horsham)</h2>
+                    <p>
+                        Train from Southern Cross Station (Melbourne) to Bendigo (change) then, connecting coach service to Adelaide via Horsham or Nhill.
+                    </p>
+                    <p>
+                        Return journey from Adelaide to Melbourne can also be booked.
+                    </p>
+                </article>
+                <article>
+                    <h2>Melbourne to/from Canberra (via Albury)</h2>
+                    <img src="images/PTV_Regional_Canberra1.jpg" alt="albury" id="albury">
+                    <p>
+                        CanberraLink
+                    </p>
+                    <p>
+                        Train from Melbourne to Albury via Seymour (change) then, coach from Seymour to Canberra via Albury.
+                    </p>
+                    <p>   
+                        Return journey from Canberra to Melbourne can also be booked.
+                    </p>                   
+                </article>
+                <article>
+                    <h2>Melbourne to/from Canberra (via Bairnsdale)</h2>
+                    <img src="images/PTV_Regional_Canberra.jpg" alt="bairnsdale" id="bairnsdale">
+                    <p>
+                        Capital Link
+                    </p>
+                    <p>
+                        Return journey from Canberra to Melbourne can also be booked.
+                    </p>   
+                </article>
+                <article>
+                    <h2>Mildura to/from Albury</h2>
+                    <img src="images/mildura.jpg" alt="Mildura to/from Albury" id="mildura">
+                    <p>
+                        Coach from Mildura to Swan Hill (change) then, connecting train from Swan Hill to Kerang (change) then, connecting coach to Albury.
+                    </p>
+                    <p>
+                        Return journey from Mildura to Albury can also be booked.
+                    </p>
+                </article>
+                <article>
+                    <table>
+                        <tr>
+                            <th>Service</th>
+                            <th>Contact</th>
+                            <th>Location</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                            <td>$98</td>
+                        </tr>
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                            <td>$98</td>
+                        </tr>
+                        <tr>
+                            <td>Ernst Handel</td>
+                            <td>Roland Mendel</td>
+                            <td>Austria</td>
+                            <td>$98</td>
+                        </tr>
+                        <tr>
+                            <td>Island Trading</td>
+                            <td>Helen Bennett</td>
+                            <td>UK</td>
+                            <td>$98</td>
+                        </tr>
+                        <tr>
+                            <td>Laughing Bacchus Winecellars</td>
+                            <td>Yoshi Tannamuri</td>
+                            <td>Canada</td>
+                            <td>$98</td>
+                        </tr>
+                        <tr>
+                            <td>Magazzini Alimentari Riuniti</td>
+                            <td>Giovanni Rovelli</td>
+                            <td>Italy</td>
+                            <td>$98</td>
+                        </tr>
+                    </table>
+                </article>
+            </div>
+            <aside id="sidebar">
+                <section class="dark">
+                    <h3>
+                        Book your ticket here:
+                    </h3>
+                    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+                        <p>
+                            <label for="line">Select Train Lines</label>
+                            <select name="line" id="line" required="required">
+                                <option value="">Please Select</option>
+                                <option value="a">Melbourne - Adelaide (via Bendigo and Nhill/Horsham)</option>
+                                <option value="b">Melbourne - Canberra (via Albury)</option>
+                                <option value="c">Melbourne - Canberra (via Bairnsdale)</option>
+                                <option value="d">Mildura - Albury</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="username">Full Name</label>
+                        </p>
+                        <p>
+                            <input id="username" name="fullname" type="text" placeholder="Enter your Full Name..." required="required" />
+                        </p>
+                        <p class="radioButton">
+                            <label for="oneway">One Way</label>
+                            <input type="radio" id="oneway" name="trip-type" value="oneway" required="required"/>
+                            <label for="return">Retuen</label>
+                            <input type="radio" id="return" name="trip-type" value="return" checked="checked"/>
+                        </p>
+                        <p>
+                            <label for="date">Travel Date</label>
+                        </p>
+                        <p>    
+                            <input type="text" name="date" id="date" placeholder="DD/MM/YYYY" required="required" pattern="[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}"/>
+                        </p>
+                        <p>
+                            <label for="seatpreference">Seat Preference</label>
+                            <select name="seatpreference" id="seatpreference" required="required">
+                                <option value="">Please Select</option>
+                                <option value="a">Near Window</option>
+                                <option value="b">Near Aisle</option>
+                                <option value="c">Disabled Assisstance</option>
+                                <option value="d">Medical Attention</option>
+                            </select>
+                        </p>
+                        <button type="submit" class="button_2">Book My Ticket</button>                
+                    </form>
+                </section>        
+            </aside>
+        </div>
+    </section>
+    <div class="container" id="footnote">
+        <article>
+            <h3>Before Buying Your Ticket</h3>
+            <ol>
+                <li>Plan ahead, you can use our trip planner <a href="https://www.ptv.vic.gov.au/journey" target="_blank">here</a>.</li>
+                <li>Please read carefully about the terms and conditions <a href="https://www.ptv.vic.gov.au/myki-terms-of-use" target="_blank">here</a>.</li>
+                <li>Please note refunds can be made only if the request is made 48 hrs prior to departure.</li>
+            </ol>
+        </article>
+        <article>
+            <h3>Special Thanks to:</h3>
+            <ul>
+                <li><a href="https://www.ptv.vic.gov.au/getting-around/interstate-travel/#train" target="_blank">PTV</a> for all the detailed information about train routes!</li>
+                <li><a href="https://www.traversymedia.com" target="_blank">Traversy Meida</a>'s online tutorials.</li>
+            </ul>
+        </article>
+    </div>  
+    <footer class="productfooter">
+        <p>COS60004 Creating Web Applications</p>
+        <p>Trains Go Interstate</p> 
+        <p>&#169; <a href="mailto:101795019@student.swin.edu.au" class="email">Yufeng Lin[101795019]</a> 2018</p>
+    </footer>
+</body>
+</html>

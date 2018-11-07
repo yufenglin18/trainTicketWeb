@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment 1: Interstate Train Ticket Purchase" />
+	<meta name="keywords" content="train ticket, interstate" />
+	<meta name="author" content="Yufeng Lin(101795019)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trains Go Interstate | Index</title>
+    <link rel="stylesheet" href="styles/style.css"  />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&amp;effect=neon%7C3d-float" />
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CUbuntu%7CAcme%7CGloria+Hallelujah" rel="stylesheet"/>
+    <script src="./scripts/part2.js"></script>
+    <script src="./scripts/enhancements.js"></script>
+</head>
+<body>
+    <header>
+        <section id="branding" class="container">
+            <p class="item">
+                <img src="images/logo.png" alt="logo" id="logo">
+            </p>
+            <h1 class="item">
+                <span class="font-effect-3d-float">Trains Go Interstate</span>
+            </h1>
+        </section>
+        <nav class="navigator">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="product.html">Product</a></p>
+                <p class="font-effect-neon"><a href="enquire.html">Enquire</a></p>
+                <p><a href="enhancements.html">Enhancements</a></p>
+                <p><a href="enhancements2.html">Enhancements 2</a></p>
+        </nav>
+    </header>
+    <p id="gotop"><a href="#top">Top</a></p>
+    <article class="container">
+        <h3 class="page-title">Lodge your enquiry:</h3>
+        <div id="enquiry-sec">
+            <form action="./payment.html" id="form">
+                <fieldset>
+                    <legend>Persoanl Details</legend>
+                    <p>
+                        <label for="givenname">Given Name</label>
+                        <input type="text" name="givenname" id="givenname" required="required" pattern="[A-Z a-z]{0,25}" />
+                        <label for="familyname">Family Name</label>
+                        <input type="text" name="familyname" id="familyname" required="required" pattern="[A-Z a-z]{0,25}" />
+                    </p>
+                    <p>
+                        <label for="emailadd">Email Address</label>
+                        <input type="email" name="emailadd" id="emailadd" required ="required" />
+                        <label for="phoneno">Phone Number</label>
+                        <input type="text" name="phoneno" id="phoneno" required="required" pattern="\d{10}" placeholder="04XXXXXXXX"/>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Address</legend>
+                    <p>
+                        <label for="streetadd">Address</label>
+                        <input type="text" name="streetadd" id="streetadd" required="required" pattern="[A-Z a-z 0-9]{0,40}"/>
+                    </p>
+                    <p>
+                        <label for="suburb">Suburb</label>
+                        <input type="text" name="suburb" id="suburb" required="required" pattern="[A-Z a-z]{0,20}"/>
+                    </p>
+                    <p>
+                        <label for="state">State</label>
+                        <select name="state" id="state" required="required">
+                            <option value="">Please Select</option>
+                            <option value="vic">VIC</option>
+                            <option value="nsw">NSW</option>
+                            <option value="qld">QLD</option>
+                            <option value="nt">NT</option>
+                            <option value="wa">WA</option>
+                            <option value="sa">SA</option>
+                            <option value="tas">TAS</option>
+                            <option value="act">ACT</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="postcode">Postcode</label>
+                        <input type="text" name="postcode" id="postcode" required="required" pattern="\d{4}" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Booking Details</legend>
+                    <table id="enquiry-table">
+                            <tr>
+                                <th>Service</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Ticket: Melbourne - Adelaide (via Bendigo and Nhill/Horsham)</td>
+                                <td>$75</td>
+                            </tr>
+                            <tr>
+                                <td>Ticket: Melbourne - Canberra (via Albury)</td>
+                                <td>$69.85</td>
+                            </tr>
+                            <tr>
+                                <td>Ticket: Melbourne - Canberra (via Bairnsdale)</td>
+                                <td>$105</td>
+                            </tr>
+                            <tr>
+                                <td>Ticket: Mildura - Albury</td>
+                                <td>$106.75</td>
+                            </tr>
+                            <tr>
+                                <td>Charter Pickup</td>
+                                <td>$145</td>
+                            </tr>
+                            <tr>
+                                <td>Accomendation</td>
+                                <td>$70.95</td>
+                            </tr>
+                        </table>
+                    <P>
+                        <label for="service">Select A Product/Service</label>
+                        <select name="service" id="service" required="required">
+                            <option value="">Please Select</option>
+                            <option value="a">Ticket: Melbourne - Adelaide (via Bendigo and Nhill/Horsham)</option>
+                            <option value="b">Ticket: Melbourne - Canberra (via Albury)</option>
+                            <option value="c">Ticket: Melbourne - Canberra (via Bairnsdale)</option>
+                            <option value="d">Ticket: Mildura - Albury</option>
+                            <option value="e">Charter Pickup</option>
+                            <option value="f">Accomendation</option>
+                        </select>
+                    </P>
+                    <p>
+                        <label for="priceTag">Service Price</label>
+                        <input type="text" id="priceTag" placeholder="Price Here" readonly>
+                    </p>
+                    <p>
+                        <label for="traveldate">Travel Date</label>
+                        <input type="text" name="traveldate" id="traveldate" placeholder="DD/MM/YYYY" required="required" pattern="[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}"/>
+                    </p>
+                    <p>
+                        <label for="quantity">Quantity of Tickets</label>
+                        <input type="number" name="quantity" id="quantity" placeholder="0" required="required" />
+                    </p>
+                    <p class="close">
+                        <label for="billing">Billing address different from Delivery Address</label>
+                        <input type="checkbox" id="billing" name="billing" value="billingdiff" />
+                    </p>
+                    <div id="billingAddress">
+                        <fieldset>
+                            <legend>Billing Address</legend>
+                            <p>
+                                <label for="billAdd">Street Address</label>
+                                <input type="text" name="billAdd" id="billAdd" pattern="[A-Z a-z 0-9]{0,40}"/>
+                            </p>
+                            <p>
+                                <label for="billSuburb">Suburb/Town</label>
+                                <input type="text" name="billSuburb" id="billSuburb" pattern="[A-Z a-z]{0,20}"/>
+                            </p>
+                            <p>
+                                <label for="billState">State</label>
+                                <select name="billState" id="billState">
+                                    <option value="">Please Select</option>
+                                    <option value="vic">VIC</option>
+                                    <option value="nsw">NSW</option>
+                                    <option value="qld">QLD</option>
+                                    <option value="nt">NT</option>
+                                    <option value="wa">WA</option>
+                                    <option value="sa">SA</option>
+                                    <option value="tas">TAS</option>
+                                    <option value="act">ACT</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="billPostcode">Postcode</label>
+                                <input type="text" name="billPostcode" id="billPostcode" pattern="\d{4}" />
+                            </p>
+                        </fieldset>
+                    </div>
+                    <p>
+                        <label for="comment">Enter your comment:</label>
+                    </p>
+                    <p>
+                        <textarea name="comment" id="comment" rows="10" placeholder="Type your comment here..."></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit" class="button_2">Pay Now</button>
+            </form>
+        </div>
+        <hr />
+        <div>
+            <section class="contact">
+                <h3>
+                    Contact Us
+                </h3>
+                <p>
+                    t: +61 3 9214 8000
+                </p>
+                <p>
+                    <strong>Hawthorn Campus</strong><br/>John Street, Hawthorn<br>Victoria 3122 Australia
+                </p>
+                <p>
+                    Hours (AEST)<br/>Mon-Fri: 8am–6pm<br/>Public holidays: closed
+                </p>
+                <hr />
+            </section>
+        </div>
+    </article>
+    <footer class="footer">
+        <p>Trains Go Interstate</p>
+        <p>&#169; <a href="mailto:101795019@student.swin.edu.au" class="email">Yufeng Lin[101795019]</a> 2018</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment 1: Interstate Train Ticket Purchase" />
+	<meta name="keywords" content="train ticket, interstate" />
+	<meta name="author" content="Yufeng Lin(101795019)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trains Go Interstate | Index</title>
+    <link rel="stylesheet" href="styles/style.css"  />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=neon%7C3d-float" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CUbuntu%7CAcme%7CGloria+Hallelujah" rel="stylesheet">
+    <script src="./scripts/part2.js"></script>
+    <script src="./scripts/enhancements.js"></script>
+</head>
+<body>
+    <header>
+        <section id="branding" class="container">
+            <p class="item">
+                <img src="images/logo.png" alt="logo" id="logo">
+            </p>
+            <h1 class="item">
+                <span class="font-effect-3d-float">Trains Go Interstate</span>
+            </h1>
+        </section>
+        <nav class="navigator" id="navbar">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="product.html">Product</a></p>
+                <p><a href="enquire.html">Enquire</a></p>
+                <p class="font-effect-neon"><a href="enhancements.html">Enhancements</a></p>
+                <p><a href="enhancements2.html">Enhancements 2</a></p>
+        </nav>
+    </header> 
+    <p id="gotop"><a href="#top">Top</a></p>
+    <section class="pagetitle">
+        <h3 class="page-title">My Enhancements</h3>
+    </section>
+    <div id="enhancement">
+        <figure>
+            <img src="images/assign.png" alt="enhancements" id="figure1">
+        </figure>
+        <article>
+            <h3>Animation</h3>
+            <p>In this assignment, I have used animation in several places, and the resources I have learnt these are from:</p>
+            <ul>
+                <li>W3School (<a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">Link Here</a>)</li>
+                <li>Traversy Media (<a href="https://www.traversymedia.com/" target="_blank">Link Here</a>)</li>
+                <li>Animate.css (<a href="https://daneden.github.io/animate.css/" target="_blank">Link Here</a>)</li>
+            </ul>
+            <p>during my reseach on the topic, I have learnt the use of cubic-bezire function to have a better control of the flow of animation, 
+                and use external website to generate parameters for the function (<a href="http://cubic-bezier.com" target="_blank">Linke Here</a>)</p>
+            <p>The places where I have implemented animations:</p>
+            <ul class="anilist">
+                <li><a href="#branding">Animation One</a></li>
+                <li><a href="about.html#animation2">Animation Two</a></li>
+                <li><a href="#figure1">Animation Three</a></li>
+                <li><a href="#figure2">Animation Four</a></li>
+            </ul>
+        </article>
+        <figure>
+            <img src="images/layout.png" alt="enhancements" id="figure2">
+        </figure>
+        <article>
+            <h3>Display: flex</h3>
+            <p>In this assignment, most of the contents were used flexbox for layout arrangement.</p>
+            <p>Commands used included:</p>
+                <ul>
+                    <li>flex-direction</li>
+                    <li>flex-wrap</li>
+                    <li>flex-flow</li>
+                    <li>justify-content</li>
+                </ul>
+            <p>During this assignment I got to test and learn different values such as flex-start/end, 
+                spac between/around in order to justify the content on the page. </p>
+            <p>for example the  <a href="#navbar">navigation bar</a> is arrange using flex.</p>
+            <div class="dark">
+                <article>
+                    <h4>A sample code for this:</h4>
+                    .navigator{
+                        <p class="indent">
+                            background-color: rgba(43, 43, 43, 0.8);
+                        <p class="indent">
+                            width: 100%;
+                        </p>
+                        <p class="indent">
+                            display: flex;
+                        </p>
+                        <p class="indent">
+                            flex-flow: row wrap;
+                        </p>
+                        <p class="indent">
+                            justify-content: space-around;
+                        </p>
+                        <p class="indent">
+                            margin: auto;
+                        </p>
+                        <p class="indent">
+                            overflow: hidden;
+                        </p>
+                        <p class="indent">
+                            padding: 0px;
+                        </p>
+                    }
+                </article>
+            </div>
+        </article>
+        <figure >
+            <img src="images/layout.png" alt="enhancements" id="figure3">
+        </figure>
+        <article>
+            <h3>iFrame</h3>
+            <p>Another thing that I have learnt and utilised from this assignment is iFrame.</p>
+            <p>I have learnt how to control the video behaviours from <a href="https://developers.google.com/youtube/iframe_api_reference">iFrame API</a></p>
+            <div class="videoshowcase">
+                    <iframe src="https://www.youtube.com/embed/pyjvTmAfCmE?autoplay=1&rel=0&amp;controls=0&amp;showinfo=0">
+                    </iframe>
+                </div>
+        </article>
+    </div>  
+    <footer class="footer">
+        <p>Trains Go Interstate</p> 
+        <p>&#169; <a href="mailto:101795019@student.swin.edu.au" class="email">Yufeng Lin[101795019]</a> 2018</p>
+    </footer>  
+</body>
+</html>

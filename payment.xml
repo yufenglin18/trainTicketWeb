@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Assignment 1: Interstate Train Ticket Purchase" />
+	<meta name="keywords" content="train ticket, interstate" />
+	<meta name="author" content="Yufeng Lin(101795019)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trains Go Interstate | Index</title>
+    <link rel="stylesheet" href="styles/style.css"  />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&amp;effect=neon%7C3d-float" />
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CUbuntu%7CAcme%7CGloria+Hallelujah" rel="stylesheet"/>
+    <script src="./scripts/part2.js"></script>
+    <script src="./scripts/enhancements.js"></script>
+</head>
+<body>
+    <header>
+        <section id="branding" class="container">
+            <p class="item">
+                <img src="images/logo.png" alt="logo" id="logo"/>
+            </p>
+            <h1 class="item">
+                <span class="font-effect-3d-float">Trains Go Interstate</span>
+            </h1>
+        </section>
+        <nav class="navigator">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="product.html">Product</a></p>
+                <p class="font-effect-neon"><a href="enquire.html">Enquire</a></p>
+                <p><a href="enhancements.html">Enhancements</a></p>
+                <p><a href="enhancements2.html">Enhancements 2</a></p>
+        </nav>
+    </header>
+    <p id="gotop"><a href="#top">Top</a></p>
+    <article class="container">
+        <h1>Payment</h1>
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php" id="paymentForm">
+            <div id="form-field">
+                <fieldset id="confirm-field">
+                    <legend>Your Booking</legend>
+                    <p><strong>Name:</strong> <span id="booking-name"></span></p>
+                    <p><strong>E-mail:</strong> <span id="booking-emailadd"></span></p>
+                    <p><strong>Phone:</strong> <span id="booking-phoneno"></span></p>
+                    <p><strong>Address:</strong> <span id="booking-streetadd"></span></p>
+                    <p><strong>Suburb:</strong> <span id="booking-suburb"></span></p>
+                    <p><strong>State:</strong> <span id="booking-state"></span></p>
+                    <p><strong>Post:</strong> <span id="booking-postcode"></span></p>
+                    <p><strong>Product:</strong></p>
+                    <span id="booking-service"></span>
+                    <p><strong>Date:</strong> <span id="booking-date"></span></p>
+                    <p><strong>Quantity:</strong> <span id="booking-quantity"></span></p>
+                    <p id="paying-total"><strong>Total:</strong> <span id="booking-total"></span></p>
+                    <input type="hidden" name="pay-givenname" id="pay-givenname"/>
+                    <input type="hidden" name="pay-familyname" id="pay-familyname"/>
+                    <input type="hidden" name="pay-emailadd" id="pay-emailadd"/>
+                    <input type="hidden" name="pay-phoneno" id="pay-phoneno"/>
+                    <input type="hidden" name="pay-streetadd" id="pay-streetadd"/>
+                    <input type="hidden" name="pay-suburb" id="pay-suburb"/>
+                    <input type="hidden" name="pay-state" id="pay-state"/>
+                    <input type="hidden" name="pay-postcode" id="pay-postcode" />
+                    <input type="hidden" name="pay-service" id="pay-service"/>
+                    <input type="hidden" name="pay-date" id="pay-date"/>
+                    <input type="hidden" name="pay-quantity" id="pay-quantity" />
+                    <input type="hidden" name="pay-total" id="pay-total" />
+                </fieldset>
+                <fieldset id="payment-field">
+                    <legend>Payment Details</legend>
+                    <label for="pay-cardType">Credit card type:</label>
+                    <select name="pay-cardType" id="pay-cardType">
+                        <option value="">Please Select</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="amex">American Express</option>
+                    </select>
+                    <label for="pay-nameOnCard">Name on Credit Card:</label>
+                    <input type="text" name="pay-nameOnCard" id="pay-nameOnCard" required="required"/>
+                    <label for="pay-cardNo">Credit Card Number:</label>
+                    <input type="text" name="pay-cardNo" id="pay-cardNo" required="required"/>
+                    <label for="pay-Expiry">Expiry Date:</label>
+                    <input type="text" name="pay-Expiry" id="pay-Expiry" required="required"/>
+                    <label for="pay-cvv">CVV:</label>
+                    <input type="text" name="pay-cvv" id="pay-cvv" required="required"/>
+                    <label>Page will reload after: <span id="timer"></span></label>
+                </fieldset>
+            </div>
+            <hr/>
+            <div id="pay-button">
+                <button type="submit" class="button_3" id="payNow">Check Out</button>
+                <button type="button" class="button_3" id="cancel">Cancel</button>
+            </div>
+        </form>
+    </article>
+    <footer class="footer">
+        <p>Trains Go Interstate</p>
+        <p>&#169; <a href="mailto:101795019@student.swin.edu.au" class="email">Yufeng Lin[101795019]</a> 2018</p>
+    </footer>
+</body>
+</html>

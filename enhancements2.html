@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Assignment 1: Interstate Train Ticket Purchase" />
+        <meta name="keywords" content="train ticket, interstate" />
+        <meta name="author" content="Yufeng Lin(101795019)" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trains Go Interstate | Index</title>
+        <link rel="stylesheet" href="styles/style.css"  />
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Rancho&amp;effect=neon%7C3d-float" />
+          <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CUbuntu%7CAcme%7CGloria+Hallelujah" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <section id="branding" class="container">
+                <p class="item">
+                    <img src="images/logo.png" alt="logo" id="logo">
+                </p>
+                <h1 class="item">
+                    <span class="font-effect-3d-float">Trains Go Interstate</span>
+                </h1>
+            </section>
+            <nav class="navigator" id="navbar">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="product.html">Product</a></p>
+                    <p><a href="enquire.html">Enquire</a></p>
+                    <p><a href="enhancements.html">Enhancements</a></p>
+                    <p class="font-effect-neon"><a href="enhancements2.html">Enhancements 2</a></p>
+            </nav>
+        </header>
+        <p id="gotop"><a href="#top">Top</a></p>
+        <div class="container">
+            <h1>More responsive design of the enquire form</h1>
+            <section id="enhancements2">
+                <h3 class="fancyTitle">Product Booking Form</h3>
+                <div id="fancyForm">
+                    <span id="next-btn">Next</span>
+                    <div id="formBox">
+                        <input id="input-field" required>
+                        <label id="input-label"></label>
+                        <div id="input-progress"></div>
+                    </div>
+                    <div id="progress-bar"></div>
+                </div>
+                <div id="output">
+                    <p id="comfirmed"></p>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <h1>Top of page navigator</h1>
+            <p>Scrolling function was used to make the go top button appearing on the page when the page was scrolled down.</p>
+            <p>Two conditions are "document.body.scrollTop > 100" and "document.documentElement.scrollTop > 100" respectively.</p>
+            <div id="pointing">
+                <p>Responsive go to top bar here:</p>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Timer for payment form</h1>
+            <p>A two minutes timer is used so that when the timer is up the page will be redirected to home page and all the sessionStorage data will be deleted.</p>
+            <ul class="anilist">
+                <li><a href="payment.html#timer">Here is the link</a></li>
+            </ul>
+        </div>
+        <footer class="footer">
+            <p>Trains Go Interstate</p>
+            <p>&#169; <a href="mailto:101795019@student.swin.edu.au" class="email">Yufeng Lin[101795019]</a> 2018</p>
+        </footer>
+        <script src="./scripts/enhancements.js"></script>
+    </body>
+</html>
